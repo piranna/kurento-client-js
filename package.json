@@ -17,7 +17,9 @@
     "coveralls": "scripts/coveralls",
     "coverallsBrowser": "scripts/coveralls -- testBrowser",
     "test": "scripts/test",
-    "testBrowser": "scripts/testBrowser"
+    "testBrowser": "scripts/testBrowser",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -43,7 +45,8 @@
     "kurento-client-filters": "Kurento/kurento-client-filters-js#master",
     "kurento-jsonrpc": "5.0.4",
     "promisecallback": "0.0.4",
-    "reconnect-ws": "KurentoForks/reconnect-ws"
+    "reconnect-ws": "KurentoForks/reconnect-ws",
+    "snyk": "^1.25.2"
   },
   "devDependencies": {
     "bower": "~1.4.1",
@@ -71,5 +74,6 @@
     "selenium-webdriver": "^2.46.1",
     "xml2js": "^0.4.9",
     "wock": "^0.1.1"
-  }
+  },
+  "snyk": true
 }
